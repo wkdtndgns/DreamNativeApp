@@ -1,10 +1,18 @@
 import React from 'react';
-import { ScrollView, StyleSheet } from 'react-native';
-import { ExpoLinksView } from '@expo/samples';
+import {
+  Image,
+  Platform,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  Link,
+  View,
+} from 'react-native';
 
 export default class LinksScreen extends React.Component {
   static navigationOptions = {
-    title: 'Links',
+    header: null,
   };
 
   render() {
@@ -12,7 +20,50 @@ export default class LinksScreen extends React.Component {
       <ScrollView style={styles.container}>
         {/* Go ahead and delete ExpoLinksView and replace it with your
            * content, we just wanted to provide you with some helpful links */}
-        <ExpoLinksView />
+          <Image
+              source={
+                __DEV__
+                  ? require('../assets/info/info.png')
+                  : require('../assets/info/info.png')
+              }
+              style={{width:'100%'}}      
+            />
+            
+            <Image
+              source={
+                __DEV__
+                  ? require('../assets/info/info1.png')
+                  : require('../assets/info/info1.png')
+              }
+              style={{width:'97%', resizeMode:'stretch'}}      
+            />
+
+                <Image
+              source={
+                __DEV__
+                  ? require('../assets/info/info2.png')
+                  : require('../assets/info/info2.png')
+              }
+              style={{width:'100%'}}      
+            />
+                <Image
+              source={
+                __DEV__
+                  ? require('../assets/info/info3.png')
+                  : require('../assets/info/info3.png')
+              }
+              style={{width:'100%'}}      
+            />
+       <Image
+              source={
+                __DEV__
+                  ? require('../assets/info/info4.png')
+                  : require('../assets/info/info4.png')
+              }
+              style={{width:'100%'}}      
+            />
+            
+          
       </ScrollView>
     );
   }

@@ -9,9 +9,7 @@ import {
   View,
 } from 'react-native';
 import { WebBrowser } from 'expo';
-import { width, height, totalSize } from 'react-native-dimension';``
-import { MonoText } from '../components/StyledText';
-import ImageGallery from 'react-image-gallery';
+
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
     header: null,
@@ -22,18 +20,7 @@ export default class HomeScreen extends React.Component {
 
   
   render() {
-    
-    const images = [
-      {
-        original: '../assets/images/main0.png',
-        thumbnail: '../assets/images/main0.png',
-      },
-      {
-        original: '../assets/images/main1.png',
-        thumbnail: '../assets/images/main1.png',
-      },
-   
-    ]
+  
     return (
       <View style={styles.container}>
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
@@ -46,8 +33,7 @@ export default class HomeScreen extends React.Component {
               }
               style={{width:'100%'}}      
             />
-       
-             <ImageGallery items={images} />
+
             <Image
               source={
                 __DEV__
