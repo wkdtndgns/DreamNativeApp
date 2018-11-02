@@ -24,15 +24,22 @@ export default class SettingsScreen extends React.Component {
 
            
               <Text> </Text>
-
-
+              {/* <Image
+              source={
+                __DEV__
+                  ? require('../assets/mypage/log.png')
+                  : require('../assets/mypage/log.png')
+              }
+              style={{width:'100%', marginTop:'3%'}}      
+            /> */}
+            
      <Image
               source={
                 __DEV__
                   ? require('../assets/mypage/mypage.png')
                   : require('../assets/mypage/mypage.png')
               }
-              style={{width:'100%', marginTop:'3%'}}      
+              style={{width:'97%', resizeMode:'stretch'}}       
             />
               <Image
               source={
@@ -40,7 +47,7 @@ export default class SettingsScreen extends React.Component {
                   ? require('../assets/mypage/mypage1.png')
                   : require('../assets/mypage/mypage1.png')
               }
-              style={{width:'100%'}}      
+              style={{width:'97%', resizeMode:'stretch'}}       
             />
 
               <Image
@@ -49,7 +56,7 @@ export default class SettingsScreen extends React.Component {
                   ? require('../assets/mypage/mypage2.png')
                   : require('../assets/mypage/mypage2.png')
               }
-              style={{width:'100%'}}      
+              style={{width:'97%', resizeMode:'stretch'}}     
             />
               <Image
               source={
@@ -57,7 +64,7 @@ export default class SettingsScreen extends React.Component {
                   ? require('../assets/mypage/mypage3.png')
                   : require('../assets/mypage/mypage3.png')
               }
-              style={{width:'100%'}}      
+              style={{width:'97%', resizeMode:'stretch'}}       
             />
               <Image
               source={
@@ -65,7 +72,8 @@ export default class SettingsScreen extends React.Component {
                   ? require('../assets/mypage/mypage4.png')
                   : require('../assets/mypage/mypage4.png')
               }
-              style={{width:'100%'}}      
+              style={{width:'97%', resizeMode:'stretch'}} 
+     
             />
       </ScrollView>
     );

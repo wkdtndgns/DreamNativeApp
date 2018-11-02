@@ -7,9 +7,10 @@ import {
   Text,
   TouchableOpacity,
   View,
+  ListView,
 } from 'react-native';
 import { WebBrowser } from 'expo';
-
+import Swiper from 'react-native-swiper';
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
     header: null,
@@ -18,7 +19,7 @@ export default class HomeScreen extends React.Component {
   };
 
 
-  
+
   render() {
   
     return (
@@ -33,8 +34,9 @@ export default class HomeScreen extends React.Component {
               }
               style={{width:'100%'}}      
             />
-
-            <Image
+     <Swiper width={400} height={290} showButtons={false} autoplay>
+          <View style={styles.slide1}>
+          <Image
               source={
                 __DEV__
                   ? require('../assets/images/main0.png')
@@ -42,7 +44,38 @@ export default class HomeScreen extends React.Component {
               }
               style={{width:'97%', resizeMode:'stretch'}}      
             />
-            
+          </View>
+          <View style={styles.slide1}>
+          <Image
+              source={
+                __DEV__
+                  ? require('../assets/images/main1.png')
+                  : require('../assets/images/main1.png')
+              }
+              style={{width:'97%', resizeMode:'stretch'}}      
+            />
+          </View>
+          <View style={styles.slide1}>
+          <Image
+              source={
+                __DEV__
+                  ? require('../assets/images/main11.png')
+                  : require('../assets/images/main11.png')
+              }
+              style={{width:'97%', resizeMode:'stretch'}}      
+            />
+          </View>
+          <View style={styles.slide1}>
+          <Image
+              source={
+                __DEV__
+                  ? require('../assets/images/main12.png')
+                  : require('../assets/images/main12.png')
+              }
+              style={{width:'97%', resizeMode:'stretch'}}      
+            />
+          </View>
+        </Swiper>
              <Image
               source={
                 __DEV__
@@ -73,7 +106,7 @@ export default class HomeScreen extends React.Component {
                   ? require('../assets/images/main6.png')
                   : require('../assets/images/main6.png')
               }
-              style={{width:'100%'}}      
+              style={{width:'97%', resizeMode:'stretch'}}        
             />
              <Image
               source={
@@ -152,6 +185,32 @@ export default class HomeScreen extends React.Component {
 }
 
 const styles = StyleSheet.create({
+  wrapper: {
+  },
+ 
+  slide1: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#9DD6EB',
+  },
+  slide2: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#97CAE5',
+  },
+  slide3: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#92BBD9',
+  },
+  text: {
+    color: '#fff',
+    fontSize: 30,
+    fontWeight: 'bold',
+  },
   container: {
     flex: 1,
     backgroundColor: '#fff',
